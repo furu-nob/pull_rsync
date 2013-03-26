@@ -1,5 +1,12 @@
 #!/bin/sh
 
+#
+# usage
+# crontab -l
+# 0 8  * * 1,2,3,4,5 /root/scripts/pullbackup/limitspeed_sync.sh 400
+# 0 19 * * 1,2,3,4,5 /root/scripts/pullbackup/limitspeed_sync.sh 0
+#
+
 PULL_RSYNC_PATH='/root/scripts/pullbackup/pull_rsync_bw.sh'
 REMOTE_SERVER='example.co.jp'
 REMOTE_DIR='/media/backup/backup'
